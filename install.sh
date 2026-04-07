@@ -13,4 +13,6 @@ echo "Starting containers..."
 docker compose up -d
 
 echo ""
-echo "Done! WordPress is running at http://localhost:$(grep PORT .env | cut -d '=' -f2)"
+echo "Done!"
+echo "  WordPress → http://localhost:$(grep ^PORT .env | cut -d '=' -f2)"
+echo "  Adminer   → http://localhost:$(grep ^ADMINER_PORT .env | cut -d '=' -f2)"
