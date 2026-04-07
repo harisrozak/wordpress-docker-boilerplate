@@ -69,6 +69,7 @@ A minimal Docker Compose setup for local WordPress development with MySQL and Ad
 ├── install.sh        # Setup and startup script
 ├── plugins/          # Mounted into WordPress plugins directory
 ├── themes/           # Mounted into WordPress themes directory
+├── .env.example      # Environment variable template (committed)
 └── .env              # Environment variables (not committed)
 ```
 
