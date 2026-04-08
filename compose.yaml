@@ -17,6 +17,7 @@ services:
       - wordpress:/var/www/html
       - ./plugins:/var/www/html/wp-content/plugins
       - ./themes:/var/www/html/wp-content/themes
+      - ./php.ini:/usr/local/etc/php/conf.d/custom.ini
 
   db:
     image: mysql:8.0
